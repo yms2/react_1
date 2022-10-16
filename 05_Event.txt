@@ -1,0 +1,14 @@
+class App extends React.Component {
+    constructor (props){
+        super(props)
+        this.메소드 이름 = this.메소드 이름.bind(this)
+    }
+
+    render () {
+        return <h1 이벤트 이름 = {this.메소드 이름}></h1>
+    }
+
+    메소드 이름 (event) {
+        //이벤트가 호출할 때 실행할 코드
+    }
+}

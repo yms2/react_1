@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://unpkg.com/react@17.0.2/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+</head>
+<body>
+    <div id="root"></div> 
+    <script type="text/babel">
+        //어플리케이션 클래스 생성하기
+        class App extends React.Component { // React.Component를 상속합니다.
+            render() {
+                return <h1>리엑트 기본</h1>
+            }
+        }
+
+        //출력하기
+        const container = document.getElementById('root')
+        ReactDOM.render(<App/>,container)
+        //App컴포넌트로 변경합니다.
+    </script>
+</body>
+</html>
